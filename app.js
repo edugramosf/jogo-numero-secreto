@@ -1,5 +1,5 @@
 let listaNumerosSorteados = [];
-let numeroLimite = 100;
+let numeroLimite = 50;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -11,7 +11,7 @@ function exibirTextoNaTela(tag, texto) {
 
 function exibirMensagemInicial() {
     exibirTextoNaTela('h1', 'Jogo do número secreto');
-    exibirTextoNaTela('p', 'Escolha um número entre 1 e 100.');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 50.');
 }
 
 exibirMensagemInicial();
@@ -108,57 +108,7 @@ function numeroPorExtenso(numero) {
         47: 'quarenta e sete',
         48: 'quarenta e oito',
         49: 'quarenta e nove',
-        50: 'cinquenta',
-        51: 'cinquenta e um',
-        52: 'cinquenta e dois',
-        53: 'cinquenta e três',
-        54: 'cinquenta e quatro',
-        55: 'cinquenta e cinco',
-        56: 'cinquenta e seis',
-        57: 'cinquenta e sete',
-        58: 'cinquenta e oito',
-        59: 'cinquenta e nove',
-        60: 'sessenta',
-        61: 'sessenta e um',
-        62: 'sessenta e dois',
-        63: 'sessenta e três',
-        64: 'sessenta e quatro',
-        65: 'sessenta e cinco',
-        66: 'sessenta e seis',
-        67: 'sessenta e sete',
-        68: 'sessenta e oito',
-        69: 'sessenta e nove',
-        70: 'setenta',
-        71: 'setenta e um',
-        72: 'setenta e dois',
-        73: 'setenta e três',
-        74: 'setenta e quatro',
-        75: 'setenta e cinco',
-        76: 'setenta e seis',
-        77: 'setenta e sete',
-        78: 'setenta e oito',
-        79: 'setenta e nove',
-        80: 'oitenta',
-        81: 'oitenta e um',
-        82: 'oitenta e dois',
-        83: 'oitenta e três',
-        84: 'oitenta e quatro',
-        85: 'oitenta e cinco',
-        86: 'oitenta e seis',
-        87: 'oitenta e sete',
-        88: 'oitenta e oito',
-        89: 'oitenta e nove',
-        90: 'noventa',
-        91: 'noventa e um',
-        92: 'noventa e dois',
-        93: 'noventa e três',
-        94: 'noventa e quatro',
-        95: 'noventa e cinco',
-        96: 'noventa e seis',
-        97: 'noventa e sete',
-        98: 'noventa e oito',
-        99: 'noventa e nove',
-        100: 'cem'   
+        50: 'cinquenta'
     };
     return numeros[numero] || numero;
 }
